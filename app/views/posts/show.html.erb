@@ -1,0 +1,27 @@
+
+
+<div class="container jumbotron frmpst">
+  <center>
+
+    <p>
+      <h4>Usuario:</h4>
+      <%= @post.user.username %>
+    </p>
+
+    <p>
+      <h4>Título:</h4>
+      <%=@post.tittle%>
+    </p>
+
+    <p>
+      <h4>Mensaje:</h4>
+      <%=@post.body%>
+    </p>
+    <p>
+
+      <a href="<%= edit_post_path(@post) %>">Editar</a>
+      <a href="/posts">Regresar</a>
+
+
+  </center>
+</div>

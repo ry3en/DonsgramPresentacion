@@ -1,0 +1,97 @@
+
+
+    <div class="container-fluid">
+
+        <!-- <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>¡Bienvenido!</strong> Para continuar por favor entra con tu cuenta, o si eres nuevo registrate en la parte de abajo.
+        </div> -->
+
+
+      <section class="row">
+                          <!-- LOL -->
+
+        <div class=" col-xs-12 col-sm-6 col-md-6">
+          <center class="tittle">
+            <img class="icon" src="<%= asset_path 'icon.jpeg' %>">
+            <br><br>
+              <h1 class="display-6">Bienvenido a DonsGram</h1>
+              <h2> La red social que une donantes </h2>
+                <%= link_to "INICIA SESION", new_session_path(resource_name) %><br />
+          </center>
+        </div>
+
+        <div class="bnvPanel rgtPanel col-xs-12 col-sm-6 col-md-6">
+
+          <div class="text-white"><h3>¡REGISTRATE!</h3> </div>
+<br>
+          <div class="row">
+
+
+              <div class="text-white col-xs-12 col-sm-6 col-md-6 " style="max-width: 20rem;">
+
+                <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= devise_error_messages! %>
+                <div class="field">
+                  <%= f.label :"Ingresa tu correo electronico: " %><br />
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "Ejemplo@hotmail.com" %>
+                </div>
+                <div class="field">
+                  <%= f.label :"Escoge un nombre de usuario: " %><br />
+                  <%= f.text_field :username, autofocus: true, :placeholder => "EjemploUsuario"%>
+                </div>
+                <div class="field">
+                  <%= f.label :"Ingresa tu nombre:" %><br />
+                  <%= f.text_field :name, autofocus: true, :placeholder => "Nombre"%>
+                </div>
+                <div class="field">
+                  <%= f.label :"Ingresa tu apellido: " %><br />
+                  <%= f.text_field :last_name, autofocus: true, :placeholder => "Apellido"%>
+                </div>
+                <div class="field">
+                  <%= f.label :"Ingresa tu edad: " %><br />
+                    <%= f.text_field :age, autofocus: true, :placeholder => "18+ (Años)"%>
+                </div>
+
+              </div>
+
+              <div class="2doPan text-white col-xs-12 col-sm-6 col-md-6 mb-3" style="max-width: 20rem;">
+
+                    <div class="field">
+                      <%= f.label :"Agrega tu estado: " %><br />
+                        <%= f.text_field :state, autofocus: true, :placeholder => "Tlaxcala, Chiapas"%>
+                    </div>
+                    <div class="field">
+                      <%= f.label :"Agrega tu pais: " %><br />
+                        <%= f.text_field :country, autofocus: true , :placeholder => "México, Cánada"%>
+                    </div>
+                    <div class="field">
+                      <%= f.label :"Escoge tu tipo de sangre: " %><br />
+                        <%= f.text_field :blood_type, autofocus: true , :placeholder => "(Letra+-) A+"%>
+                    </div>
+                    <div class="field">
+                      <%= f.label :"Ingresa una contraseña: "%>
+
+                            <%= f.password_field :password, autocomplete: "off" , :placeholder => "6 Carácteres mínimos" %>
+                    </div>
+                    <div class="field">
+                      <%= f.label :"Reescribre la contraseña: " %><br />
+                        <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "Asegurate de escribirla bien" %>
+                    </div>
+
+                    <br><br>
+
+
+
+                </div>
+<%= f.submit "¡Registrate!" %>
+
+
+
+                    <% end %>
+
+
+                    </div>
+                  </div>
+
+      </div>
