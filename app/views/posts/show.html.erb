@@ -1,23 +1,30 @@
+<div class="">
+  <br>
+</div>
 
-
-<div class="container jumbotron frmpst">
+<div class="card">
   <center>
 
-    <p>
-      <h4>Usuario:</h4>
-      <%= @post.user.username %>
-    </p>
+<div class="card-header">
 
-    <p>
-      <h4>Título:</h4>
-      <%=@post.tittle%>
-    </p>
+  <h4>Usuario:</h4>
+  <%= @post.user.username %>
+</div>
 
-    <p>
-      <h4>Mensaje:</h4>
-      <%=@post.body%>
-    </p>
-    <p>
+<div class="card-header">
+
+  <h4>Título:</h4>
+  <%=@post.tittle%>
+</div>
+
+<div class="card-header">
+  <h4>Mensaje:</h4>
+  <%=@post.body%>
+
+</div>
+
+
+
 
       <a href="<%= edit_post_path(@post) %>">Editar</a>
       <a href="/posts">Regresar</a>

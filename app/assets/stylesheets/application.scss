@@ -25,18 +25,20 @@
    danger: #dc3545
  );
 
- .avat{
-   width: 150px;
- }
+ body{
+   background-image: url(/assets/header.jpg);
+   position: relative;
+   background-position: center center;
+   background-size: cover;}
 
+ .padding{padding-top: 50px;}
+ .navicon{width: 50px;}
+
+ .avat{width: 150px;}
 .usrPad{
   padding-top: 25px;
 }
 
- .frmpst{padding-top: 50px;}
-.navicon{
-  width: 50px;
-}
   .bnvPanel
   {
     padding-top: 50px;
@@ -83,11 +85,4 @@
 
 .options{
   color: white;
-  }
-
-  body{
-    background-image: url(/assets/header.jpg);
-    position: relative;
-    background-position: center center;
-    background-size: cover;
   }

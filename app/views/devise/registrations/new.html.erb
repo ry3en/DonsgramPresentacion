@@ -9,11 +9,9 @@
                 <%= link_to "INICIA SESION", new_session_path(resource_name) %><br />
           </center>
         </div>
-
         <div class="bnvPanel rgtPanel col-xs-12 col-sm-6 col-md-6">
-
           <div class="text-white"><h3>¡REGISTRATE!</h3> </div>
-<br>
+          <br>
           <div class="row">
 
 
@@ -67,20 +65,9 @@
                       <%= f.label :"Reescribre la contraseña: " %><br />
                         <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "Asegurate de escribirla bien" %>
                         <%= f.submit "¡Registrate!" %>
+                        <% end %>
                     </div>
-
-                    <br><br>
-
-
-
                 </div>
-
-
-
-                    <% end %>
-
-
-                    </div>
-                  </div>
-
+              </div>
+          </div>
       </div>
