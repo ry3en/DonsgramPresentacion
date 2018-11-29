@@ -33,7 +33,8 @@ gem 'haml-rails'
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'annotate'
-
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
