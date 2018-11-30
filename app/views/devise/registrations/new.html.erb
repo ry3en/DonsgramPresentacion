@@ -10,7 +10,7 @@
           </center>
         </div>
         <div class="bnvPanel rgtPanel col-xs-12 col-sm-6 col-md-6">
-          <div class="text-white"><h3>¡REGISTRATE!</h3> </div>
+          <div class="text-white"><h3>¡REGÍSTRATE!</h3> </div>
           <br>
           <div class="row">
 
@@ -25,7 +25,7 @@
                 </div>
                 <div class="field">
                   <%= f.label :"Escoge un nombre de usuario: " %><br />
-                  <%= f.text_field :username, autofocus: true, :placeholder => "EjemploUsuario"%>
+                  <%= f.text_field :username, autofocus: true, :placeholder => "Alias"%>
                 </div>
                 <div class="field">
                   <%= f.label :"Ingresa tu nombre:" %><br />
@@ -37,7 +37,7 @@
                 </div>
                 <div class="field">
                   <%= f.label :"Ingresa tu edad: " %><br />
-                    <%= f.text_field :age, autofocus: true, :placeholder => "18+ (Años)"%>
+                    <%= f.text_field :age, autofocus: true, :placeholder => "18+"%>
                 </div>
 
               </div>
@@ -46,15 +46,15 @@
 
                     <div class="field">
                       <%= f.label :"Agrega tu estado: " %><br />
-                        <%= f.text_field :state, autofocus: true, :placeholder => "Tlaxcala, Chiapas"%>
+                        <%= f.text_field :state, autofocus: true, :placeholder => "Aquí tu estado"%>
                     </div>
                     <div class="field">
                       <%= f.label :"Agrega tu pais: " %><br />
-                        <%= f.text_field :country, autofocus: true , :placeholder => "México, Cánada"%>
+                        <%= f.text_field :country, autofocus: true , :placeholder => "Aquí tu país"%>
                     </div>
                     <div class="field">
                       <%= f.label :"Escoge tu tipo de sangre: " %><br />
-                        <%= f.text_field :blood_type, autofocus: true , :placeholder => "(Letra+-) A+"%>
+                        <%= f.text_field :blood_type, autofocus: true , :placeholder => "(Letra +/-) A+"%>
                     </div>
                     <div class="field">
                       <%= f.label :"Ingresa una contraseña: "%>
@@ -63,8 +63,8 @@
                     </div>
                     <div class="field">
                       <%= f.label :"Reescribre la contraseña: " %><br />
-                        <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "Asegurate de escribirla bien" %>
-                        <%= f.submit "¡Registrate!" %>
+                        <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "Asegúrate de escribirla bien" %>
+                        <%= f.submit "¡Regístrate!" %>
                         <% end %>
                     </div>
                 </div>
