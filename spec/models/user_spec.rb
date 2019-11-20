@@ -35,7 +35,7 @@ RSpec.describe User, type: :model do
   it { should validate_uniqueness_of :username}
   it { should validate_length_of(:username).is_at_least(3).is_at_most(12) }
 
-  describe "#validate_username_regex" do
+  describe "#validate_curp_regex" do
     let(:user){FactoryBot.build(:user)}
     it "should not allow username with numbers at the beginning" do
       user.username = "9dsfds"
