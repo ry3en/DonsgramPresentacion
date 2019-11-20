@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191119233153) do
+ActiveRecord::Schema.define(version: 20180519203531) do
 
   create_table "posts", force: :cascade do |t|
     t.text "tittle"
@@ -18,51 +18,6 @@ ActiveRecord::Schema.define(version: 20191119233153) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "sv"
-    t.integer "age"
-    t.string "name"
-    t.string "sex"
-    t.string "rza"
-    t.string "log"
-    t.string "tel"
-    t.string "ocu"
-    t.string "rgn"
-    t.string "lugo"
-    t.string "dom"
-    t.string "hf"
-    t.string "pp"
-    t.string "hp"
-    t.string "kk"
-    t.string "ad"
-    t.string "tq"
-    t.string "alm"
-    t.string "dpt"
-    t.string "ha"
-    t.string "tbj"
-    t.string "pst"
-    t.string "pa"
-    t.string "sg"
-    t.string "da"
-    t.string "ta"
-    t.string "hgfc"
-    t.string "fr"
-    t.string "tmp"
-    t.string "pso"
-    t.string "tll"
-    t.string "imc"
-    t.string "eg"
-    t.string "cza"
-    t.string "clo"
-    t.string "trx"
-    t.string "abd"
-    t.string "mms"
-    t.string "gts"
-    t.string "lb"
-    t.string "ots"
-    t.string "com"
-    t.string "dno"
-    t.string "pno"
-    t.string "pln"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
